@@ -69,7 +69,7 @@ select {
 
 
 .container{
-    display: flex;
+    
     max-width: 1538px;
     width: 100%;
     margin: 0 auto;
@@ -79,6 +79,7 @@ select {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 16px;
 }
 
 .header__wrapper{
@@ -88,6 +89,8 @@ select {
 }
 
 .header__logo {
+  display: flex;
+  align-items:center;
 }
 .header__navigation{
     display: flex;
@@ -108,14 +111,108 @@ select {
 
 }
 .header__searching {
-    border: #A7A7A7 1px solid;
-    background-color: #67676762;
-    width: 130px;
-    height: 34px;
+  display: flex;
+  width: 130px;
+  height: 34px;
+  border: 0;
+  align-items:center;
+}
+
+
+.main_search{
+  background-color: #67676762;
+  width: 130px;
+  height: 34px;
+  color: #A7A7A7;
+  border-radius: 12px;
+  text-align: center;
+  border: none;
+  outline: none;
+  float: left;
+  position: relative;
+}
+
+.fa-magnifying-glass{
+  padding-left: 12px;
+  position: absolute;
+  color: #A7A7A7;
+  font-size: 20px;
 }
 
 .icon__nav{
     width: 24px;
     height: 24px;
     
+}
+
+.content{
+  margin: 32px 0 0 0 ;
+  
+}
+
+.left{
+  max-width: 752px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+
+.categories::after{
+  content:'•';
+  padding:0 6px 0 6px;
+}
+
+.games::after{
+  content: '•';
+  padding: 0 6px;
+}
+
+.left__heading{
+  margin-top: 18px;
+  color: #f8f8f8;
+  font-family: Inter;
+  font-size: px;
+  font-style: normal;
+  
+  line-height: 38px;
+  letter-spacing: -2.24px;
+}
+.main__katalog{
+  display: flex;
+  
+  color: #5F5F5F;
+  font-size: 12px; 
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.left__heading h2{
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  max-width: 413px;
+  width: 100%;
+}
+
+.heading__image{
+  width: 752px;
+  height: 422px;
+}
+
+.description__heading{
+  color: #f8f8f8;
+  font-size: 24 px;
+  line-height: 27px;
+  margin: 0 0 24px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.description__text{
+  color: #a7a7a7;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+line-height: 140%;
+letter-spacing: 0px;
 }
