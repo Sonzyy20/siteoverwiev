@@ -216,3 +216,96 @@ select {
 line-height: 140%;
 letter-spacing: 0px;
 }
+
+.left__Semi_items{
+  color: #f8f8f8;
+
+}
+
+.Semi_items__heading{
+  font-size: 24px;
+  font-family: 'Inter',sans-serif;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.left__semi_row{
+  display: flex;
+}
+
+.semi_items_card{
+  margin-right: 16px;
+  background-color: rgba(103, 103, 103, 0.25);
+  width: fit-content;
+  border-radius: 14px;
+}
+
+.button_info{
+padding: 12px 12px 8px 12px;
+}
+
+.price{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.button_cost{
+  display: flex;
+  justify-content: space-between;
+}
+
+.heart{
+  color: #73EF46;
+}
+
+.button_text{
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.fame32{
+  display: flex;
+}
+
+.feedback{
+  display: flex;
+  margin-right: 8px;
+}
+
+.feedback_icon{
+  color: #a7a7a7;
+  font-size: 15px;
+  margin-right: 4px;
+}
+
+.feedback_count{
+  justify-content: center;
+  align-items: center;
+  color: #a7a7a7;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  display:inline-flex;
+}
+
+.raiting{
+  display: flex;
+}
+
+.raiting__icon{
+  color: #a7a7a7;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.raiting__count{
+  color: #a7a7a7;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
