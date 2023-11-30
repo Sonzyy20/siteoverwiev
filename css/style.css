@@ -3,6 +3,14 @@
 *::after {
   box-sizing: border-box;
 }
+*{
+  font-family: "Inter", sans-serif;
+}
+
+i {
+  
+  font-family: "Font Awesome 6 Free";
+}
 
 /* Убираем внутренние отступы */
 ul[class],
@@ -71,6 +79,10 @@ select {
   max-width: 1538px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
@@ -182,10 +194,13 @@ select {
 }
 
 .left__heading h2 {
-  font-family: "Inter", sans-serif;
+  
   font-weight: 800;
   max-width: 413px;
+  font-size: 32px;
+  letter-spacing: -2.24px; 
   width: 100%;
+  margin-bottom: 12px;
 }
 
 .heading__image {
@@ -198,13 +213,13 @@ select {
   font-size: 24 px;
   line-height: 27px;
   margin: 0 0 24px 0;
-  font-family: "Inter", sans-serif;
+  
 }
 
 .description__text {
   color: #a7a7a7;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  
   font-weight: 700;
   line-height: 140%;
   letter-spacing: 0px;
@@ -216,7 +231,7 @@ select {
 
 .Semi_items__heading {
   font-size: 24px;
-  font-family: "Inter", sans-serif;
+ 
   font-weight: bold;
   margin-bottom: 24px;
 }
@@ -255,7 +270,7 @@ select {
 }
 
 .price {
-  font-family: "Inter", sans-serif;
+ 
   font-weight: 700;
   font-size: 17px;
 }
@@ -265,7 +280,7 @@ select {
 }
 
 .sale_procent {
-  font-family: "Inter", sans-serif;
+  
 
   border: 1px solid #73ef46;
   background-color: #73ef46;
@@ -281,7 +296,6 @@ select {
 }
 
 .price_sale {
-  font-family: "Inter", sans-serif;
   font-size: 15px;
   text-decoration: line-through #ff5656;
   display: flex;
@@ -299,7 +313,6 @@ select {
 }
 
 .button_text {
-  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
   flex: 1 1 auto;
@@ -341,7 +354,6 @@ select {
   color: #a7a7a7;
   font-size: 12px;
   font-weight: 500;
-  font-family: "Inter", sans-serif;
   display: inline-flex;
 }
 
@@ -358,7 +370,6 @@ select {
 
 .raiting__count {
   color: #a7a7a7;
-  font-family: "Inter", sans-serif;
   font-size: 12px;
   display: flex;
   justify-content: center;
@@ -377,7 +388,6 @@ select {
 }
 
 .show__more__button p {
-  font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 18px;
@@ -389,7 +399,6 @@ select {
 }
 
 .text_authors {
-  font-family: "Inter", sans-serif;
   color: #f8f8f8;
   font-size: 24px;
   line-height: 27px;
@@ -440,7 +449,6 @@ select {
   margin: 0 auto;
   font-size: 15px;
   line-height: 18px;
-  font-family: "Inter", sans-serif;
   font-weight: 600;
   color: #F8F8F8;
   margin-bottom: 4px;
@@ -450,7 +458,6 @@ select {
   margin: 0 auto;
   font-size: 12px;
   line-height: 16px;
-  font-family: "Inter", sans-serif;
   font-weight: 500;
   color: #676767;
 }
@@ -470,7 +477,6 @@ display: flex;
 
 .reviews__nav h2{
   color: white;
-  font-family: "Inter", sans-serif;
   font-size: 24px;
   line-height: 27px;
   font-weight: 700;
@@ -545,7 +551,6 @@ box-sizing: border-box;
 }
 
 .review-card__text {
-  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
@@ -610,4 +615,245 @@ padding: 14px 18px;
   border: none;
   border-radius: 14px;
   cursor: pointer;
+  margin-bottom: 80px;
 }
+.right{
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  width: 368px;
+  gap: 32px;
+  margin-left: 16px;
+}
+
+.right__heading{
+  display: flex;
+  flex-direction: column;
+}
+
+.right__cost{
+  color: #f8f8f8;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 800; 
+  margin-bottom: 12px;
+}
+
+.right__button--buy{
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  display: flex;
+  padding: 20px 25px;
+  align-items: center;
+  justify-content: center;
+  border-radius:64px;
+  background-color: #73EF46;
+}
+
+.seller{
+  display: flex;
+  max-width: 177px;
+}
+
+.seller__avatar{
+  width: 37px;
+  height: 37px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.seller__nick{
+  color: #F8F8F8;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.seller__raiting{
+  display: flex;
+  color: #A7A7A7;
+  font-size: 12px;
+  
+}
+
+.comment{
+  margin-right: 4px;
+  width: 13px;
+  height: 12px;
+  font-size: 12px;
+}
+
+
+.seller__feedback{
+  margin-right: 8px;
+}
+.seller__star__icon{
+  margin-right: 4px;
+  font-size: 12px;
+}
+
+
+.seller__product__desc{
+  display: flex;
+  
+  
+}
+
+.seller__product__count{
+  width: 176px;
+  height: 38px;
+}
+
+.seller__product__naming{
+  color: #A7A7A7;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.seller__product__quantity{
+  color: #f8f8f8;
+  font-size: 15px;
+}
+
+.seller__product__prop{
+  width: 176px;
+  height: 38px;
+}
+
+.seller__product__char{
+  color: #F8F8F8;
+  font-size: 15px;
+}
+
+.seller__banner{
+  display: flex;
+padding: 18px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch; 
+border-radius: 8px;
+border: 1px solid rgba(103, 103, 103, 0.25);
+}
+
+.seller__banner__payment{
+  color: #a7a7a7;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.seller__banner__payments--method{
+  display: flex;
+  background-color: #252525;
+  border-radius: 8px;
+  gap: 8px;
+  align-items: flex-start;
+  width: 332px;
+}
+
+.method__1{
+  display: flex;
+  padding: 4px 15px;
+  align-items: flex-start;
+}
+
+.seller__banner__payments-logo{
+  width: 18px;
+  height: 18px;
+}
+
+.seller__banner__fields{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.seller__banner__field{
+  display: flex;
+  font-size: 12px;
+  line-height: 16px;
+  color: #5f5f5f;
+  align-items: center;
+}
+
+.fa-shield-halved{
+  color: #73EF46;
+  font-size: 12px;
+  height: 15px;
+  width: 15px;
+  margin-right: 8px;
+}
+
+.fa-chevron-right{
+  margin-left: 2px;
+  font-size: 12px;
+}
+
+.fa-comments{
+  color:#a7a7a7;
+  margin-right: 8px;
+  font-size: 12px;
+  width: 15px;
+  height: 15px;
+}
+
+.icon__check{
+  color: #73EF46;
+  margin-right: 8px;
+  font-size: 12px;
+  width: 15px;
+  height: 15px;
+}
+
+.footer{
+  width: 1136px;
+  height: 190px;
+  border: 1px solid rgba(103, 103, 103, 0.25);
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.fame435{
+  margin-left: 70px;
+  width: 250px;
+}
+
+.etc{
+  display: flex;
+  gap: 10px;
+}
+
+.etc a{
+
+ color: #A7A7A7; 
+ font-size: 10px;
+ font-weight: 500;
+ text-decoration: none;
+}
+
+.footer__icons{
+  color: #73EF46;
+  font-size: 12px;
+  display: flex;
+  gap: 4px;
+  margin-right: 70px;
+}
+
+.fa-brands{
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background-color: rgba(103, 103, 103, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
