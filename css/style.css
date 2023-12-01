@@ -858,3 +858,11 @@ border: 1px solid rgba(103, 103, 103, 0.25);
   justify-content: center;
 }
 
+.fa-arrow-right{
+  transform: rotate(-45deg);
+  color: #5F5F5F;
+}
+
+.fa-arrow-right:hover{
+cursor: pointer;
+}
