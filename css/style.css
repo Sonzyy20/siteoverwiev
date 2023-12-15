@@ -862,6 +862,11 @@ cursor: pointer;
  text-decoration: none;
 }
 
+.etc a:hover{
+  color: #F8F8F8;
+  text-decoration: underline;
+}
+
 .footer__icons{
   color: #73EF46;
   font-size: 12px;
