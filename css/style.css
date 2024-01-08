@@ -86,7 +86,7 @@ select {
 }
 
 .header {
-  width: 100%;
+  width: 1136px;
   display: flex;
   justify-content: center;
   margin-top: 16px;
@@ -156,16 +156,18 @@ select {
 .content {
   margin: 32px 0 0 0;
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
+  max-width: 1030px;
   gap: 16px;
 }
 
 .left {
-  max-width: 752px;
-  width: 100%;
+  max-width: 1136px;
+  
   display: flex;
-  flex-direction: column;
-  gap: 80px;
+  
+  
 }
 
 .categories::after {
@@ -187,27 +189,38 @@ select {
   display: flex;
 
   line-height: 38px;
-  letter-spacing: -2.24px;
+  
+}
+.content__wraper{
+  margin-right: 16px;
 }
 
+
 .limiter{
-  max-width: 50%;
+  max-width: 66%;
 }
 
 .main__katalog {
   display: flex;
-
+justify-content: center;
+  
   color: #5f5f5f;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.5px;
 }
 
+.main__katalog h2{
+  letter-spacing: -2.24px;
+}
+
 .left__heading h2 {
+  display: flex;
   
+  justify-content: center;
   font-weight: 800;
-  max-width: 413px;
-  font-size: 32px;
+  
+  font-size: 30px;
   letter-spacing: -2.24px; 
   width: 100%;
   margin-bottom: 12px;
@@ -248,7 +261,7 @@ select {
 
 .left__semi_row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 240px 240px 240px;
   grid-gap: 25px 16px;
   margin-bottom: 24px;
 }
@@ -256,7 +269,7 @@ select {
 .semi_items_card {
   
   background-color: rgba(103, 103, 103, 0.25);
-  width: fit-content;
+  width: 100%;
   border-radius: 14px;
   max-width: 240px;
   height: 246px;
@@ -686,6 +699,12 @@ padding: 14px 18px;
   cursor:   ;
 }
 
+.seller__description{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .seller__avatar{
   width: 37px;
   height: 37px;
@@ -705,6 +724,7 @@ padding: 14px 18px;
   display: flex;
   color: #A7A7A7;
   font-size: 12px;
+  letter-spacing: 0;
   
 }
 
@@ -765,6 +785,7 @@ flex-direction: column;
 align-items: flex-start;
 gap: 24px;
 align-self: stretch; 
+letter-spacing: 0;
 border-radius: 8px;
 border: 1px solid rgba(103, 103, 103, 0.25);
 }
@@ -909,9 +930,39 @@ cursor: pointer;
 
 
 @media  screen and (max-width:1200px) {
+
+  .header{
+    width: 66%;
+  }
+
+  .container{
+    max-width: 1100px;
+  }
   
   .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left__semi_row{
+    grid-template-columns: 215px 215px 215px;
+    grid-gap: 15px 10px;
+  }
+
+.semi_items_card{
+  
+}
+
+  .left{
+    max-width: 66%;
+  }
+  
+  .left__heading{
     display: block;
+  }
+
+  .footer{
+    width: 66%;
   }
   
 }
