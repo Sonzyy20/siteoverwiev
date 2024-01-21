@@ -65,9 +65,9 @@ img {
 /* Указываем понятную периодичность в потоке данных у article*/
 article > * + * {
   margin-top: 1em;
-}
+} 
 
-/* Наследуем шрифты для инпутов и кнопок */
+/* Наследуем шрифты для инпутов и кнопок */ 
 input,
 button,
 textarea,
@@ -447,7 +447,7 @@ display: none;
   font-size: 24px;
   line-height: 27px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -978,22 +978,30 @@ cursor: pointer;
     width: 66%;
   }
   
+ 
+
+
 }
 
 
 @media  screen and (max-width:375px) {
  
+  .limiter__350px{
+    max-width: 100%;
+    width: 96%;
+  }
 
   .container{
    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: e;
+    align-items: center;
     justify-content: right;
   }
   
   .left{
     max-width: 100%;
+    width: 95%;
   }
 
 
@@ -1002,10 +1010,31 @@ cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-items: end;
+    width: 96%;
+  }
+
+  .right__button--buy{
+    width: 96%;
+  }
+
+  .seller__banner{
+    width: 96%;
+  }
+
+  .seller__top{
     width: 100%;
   }
+
+  .seller__banner__payments--method{
+  width: 100%;
+  }
+
+  .left__Semi_items{
+    width: 96%;
+  }
+
   .left__semi_row{
-    grid-template-columns: 167px 167px ;
+    grid-template-columns: 168px 168px ;
     grid-gap: 15px 10px;
   }
 
@@ -1024,11 +1053,6 @@ cursor: pointer;
 
   }
 
-  .reviews__row{
-    display: flex;
-    flex-direction: column;
-  }
-  
   .just-hide{
     display: none;
   }
@@ -1036,7 +1060,51 @@ cursor: pointer;
   .limiter{
     max-width: 100%;
   }
+
+  .reviews__row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .authors__heading{
+    justify-content: center;
+  }
+
+  .authors__buttons{
+    display: none;
   
+  }
+
+  .text_authors{
+    width: 80%;
+  }
+  
+  
+  .review-card{
+    width: 96%;
+    max-width: none;
+  }
+
+.semi__authors_list{
+  justify-content: flex-end;
+  
+}
+
+.reviews{
+  width: 96%;
+}
+
+.reviews__nav{
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left__description{
+  width: 95%;
+}
+
+
   .left__heading{
     display: block;
   }
