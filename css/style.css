@@ -1000,7 +1000,7 @@ cursor: pointer;
   }
   
   .left{
-    max-width: 100%;
+    max-width: none;
     width: 95%;
   }
 
@@ -1008,8 +1008,7 @@ cursor: pointer;
   .content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: end;
+ 
     width: 96%;
   }
 
@@ -1048,9 +1047,18 @@ cursor: pointer;
     height: 192px;
   }
 
+  .other__authors{
+    width: 96%;
+  }
+
   .semi__authors_list{
     grid-template-columns: 176px 176px;
+    width: 100%;
+    margin: 0;
+  }
 
+  .author{
+ 
   }
 
   .just-hide{
@@ -1086,10 +1094,7 @@ cursor: pointer;
     max-width: none;
   }
 
-.semi__authors_list{
-  justify-content: flex-end;
-  
-}
+
 
 .reviews{
   width: 96%;
