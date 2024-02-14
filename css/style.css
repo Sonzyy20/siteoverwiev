@@ -222,6 +222,10 @@ display: none;
   letter-spacing: 0.5px;
 }
 
+.main__katalog.just-hide{
+  display: flex;
+}
+
 .main__katalog h2{
   letter-spacing: -2.24px;
 }
@@ -308,6 +312,10 @@ display: none;
   display: flex;
   flex-direction: column;
   
+}
+
+.main__katalog.just-hide{
+  display: none;
 }
 
 .price {
@@ -1109,7 +1117,7 @@ cursor: pointer;
   }
 
   .heading__image{
-    width: 343px;
+    
     height: 192px;
   }
 
@@ -1308,8 +1316,8 @@ cursor: pointer;
   }
 
   .heading__image{
-    width: 343px;
-    height: 192px;
+    
+    height: 100%;
   }
 
   .other__authors{
@@ -1378,6 +1386,9 @@ cursor: pointer;
   width: 95%;
 }
 
+.content__wraper{
+  margin: 0;
+}
 
   .left__heading{
     display: block;
